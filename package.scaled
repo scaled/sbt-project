@@ -1,8 +1,8 @@
    name: sbt-project
+ source: git:https://github.com/scaled/sbt-project.git
 version: 1.0
 descrip: Provides SBT project support for Scaled.
  weburl: https://github.com/scaled/sbt-project
- srcurl: git:https://github.com/scaled/sbt-project.git
 license: New BSD
  srcdir: src/main/scala
  bindir: target/classes
