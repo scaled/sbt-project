@@ -7,10 +7,10 @@ package scaled.project
 import java.nio.file.Path
 import scaled._
 
-class SbtProject (val root :Path, ps :ProjectSpace) extends AbstractFileProject(ps) {
+class SbtProject (val root :Project.Root, ps :ProjectSpace) extends AbstractFileProject(ps) {
 
   // TODO: many things
-  override def name = root.getFileName.toString
+  override def name = root.path.getFileName.toString
   override def idName = s"sbt-$name" // TODO
 
   override protected def ignores = SbtProject.sbtIgnores
